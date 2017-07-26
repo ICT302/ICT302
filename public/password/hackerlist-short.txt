@@ -1,0 +1,4 @@
+password
+testing
+pass$word
+12345678

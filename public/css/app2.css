@@ -1,0 +1,356 @@
+/* REGISTER FORM */
+
+div#password-guide {
+    padding: 10px;
+    border: 1px solid #cdcdcd;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+div#password-guide li {
+    color: #b2b2b2;
+    font-size: 12px;
+    font-family: monospace;
+    line-height: 21px;
+    letter-spacing: -0.5px;
+    font-style: italic;
+}
+
+div#password-guide ul {
+    padding-left: 15px;
+    margin-bottom: 0;
+}
+
+
+/* PASSWORD METER */
+div#password-meter {
+    position: absolute;
+    bottom: 13px;
+    right: -335px;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,.2);
+    background-color: #fff;
+    border: 1px solid;
+    border-color: #bbb #bbb #a8a8a8;
+    padding: 16px;
+    width: 330px;
+    line-height: 17px;
+    z-index: 3;
+}
+.arrow {
+    border: solid 10px transparent;
+    border-right-color: #bfbfbf;
+    position: absolute;
+    left: -20px;
+    bottom: 5px;
+    z-index: 2;
+}
+#password-meter ul {
+    padding-left: 10px;
+    margin-bottom: 0;
+}
+
+#password-meter ul li {
+    color: #999;
+    font-size: 12px;
+    font-family: monospace;
+    line-height: 19px;
+    letter-spacing: -0.8px;
+}
+
+.password-strength p {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+.password-strength .meter {
+    margin: 4px 0;
+    height: 5px;
+    background: #f5f5f5;
+}
+
+
+#password-bar{
+    display: block;
+    height: 100%;    
+}
+
+#password-bar.weak {
+    background: #a03;
+    width: 80px;
+}
+#password-bar.fair {
+    background: #fc3;
+    width: 150px;
+}
+#password-bar.good {
+    background: #2d98f3;
+    width: 205px;   
+}
+#password-bar.strong {
+    background: #76c261;
+    width: 295px;   
+}
+
+
+#password-meter ul.dynamic-list li {
+    display: block;
+}
+#password-meter ul.dynamic-list {
+    padding-left: 5px;
+}
+
+#password-meter ul.dynamic-list li.default > i.fa{
+    vertical-align: text-top;
+}
+
+
+#password-meter ul.dynamic-list li.loading > i.fa:before {
+    content: "\f110";
+}
+
+#password-meter ul.dynamic-list li.loading > i.fa {
+    -webkit-animation: fa-spin 2s infinite linear;
+    animation: fa-spin 2s infinite linear;
+}
+
+#password-meter ul.dynamic-list li.default > i.fa:before {
+    color: #999;
+    content: "\f111";
+    font-size: 6px;
+    margin-right: 2px;
+    margin-left: 1px;
+}
+#password-meter ul.dynamic-list li.success > i.fa:before {
+    color: green;
+    content: "\f00c";
+}
+#password-meter ul.dynamic-list li.fail > i.fa:before {
+    color: red;
+    content: "\f00d";
+}
+
+
+/* PASSWORD ENTROPY */
+.password-entropy p {
+    font-family: monospace;
+    color: #555;
+    font-size: 12px;
+    letter-spacing: -1px;
+    margin: 15px 0 8px;
+    padding: 7px 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+
+.password-entropy-suggestion .loading:before,
+.password-entropy .loading:before {
+    content: "\f110";
+}
+
+.password-entropy-suggestion .loading,
+.password-entropy .loading{
+    -webkit-animation: fa-spin 2s infinite linear;
+    animation: fa-spin 2s infinite linear;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;    
+}
+
+.password-entropy-suggestion p {
+    font-family: monospace;
+    color: #555;
+    font-size: 12px;
+    letter-spacing: -1px;
+    margin: 0 0 15px 0;
+    padding: 0 0 7px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.password-entropy-suggestion span,
+.password-entropy span {
+    color: red;
+}
+
+span.hint {
+    font-size: 11px;
+    line-height: 15px;
+    text-align: right;
+    display: block;
+    font-family: monospace;
+    font-style: italic;
+    color: #b2b2b2;
+}
+.hint a {
+    cursor: pointer;
+}
+
+.post-list .post {
+    padding: 20px;
+    border-top: 1px solid #e9e9e9;
+}
+.post-list .post:first-child{
+    padding-top:0;
+    border-top: 0;
+}
+
+.post hr {
+    margin: 10px 0;
+}
+
+.delete-form {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.delete-form .form-group {
+    margin-bottom: 0;
+}
+
+.new-admin{
+    float: right;
+}
+
+.read-more{
+    float:right;
+}
+
+.return-button{
+    float: right;
+}
+
+.clear{
+    clear: both;
+}
+
+
+/* TABLE CSS */
+.table-bordered > thead > tr > th {
+    border: 0;
+    border-bottom: 2px #d1dfe8 solid;
+    border-right: 2px solid white;
+    background-color: #f7f4ef !important;
+    color: #333;
+}
+.dataTables_wrapper a:hover {
+    color: #1b817e;
+}
+.dataTables_wrapper .actions > span {
+    font-family: monospace;
+    font-style: italic;
+    font-size: 12px;
+    padding-left: 4px;
+    letter-spacing: -0.5px;
+}
+
+.dataTables_wrapper table thead tr th {
+    vertical-align: middle;
+}
+.table-bordered > tbody > tr > td {
+    border: 1px solid #ebebeb;
+    word-wrap: break-word;
+    white-space: normal;
+}
+table.dataTable {
+    width: 100% !important;
+    clear: both;
+    margin-bottom: 6px !important;
+    max-width: none !important;
+    border: 1px solid #ebebeb !important;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+.dataTables_wrapper {
+    width: 100% !important;
+}
+/* TABLE CSS */
+
+
+/* SEARCH */
+.search-row {
+    position: relative;
+}
+
+i.search-btn {
+    position: absolute;
+    top: 2px;
+    right: 17px;
+    padding: 9px 12px;
+    cursor: pointer;
+    background: #fff;
+}
+
+/* CALENDAR */
+.calendar-panel .panel-body {
+    padding: 20px 0;
+}
+
+#post-calendar .fc-center h2 {
+    font-size: 20px;
+    cursor: pointer;
+    line-height: 28px;
+    margin-left: 10px;
+}
+#post-calendar .fc-center h2:hover {
+    text-decoration: underline;
+    color: #216a94;
+}
+#post-calendar .fc-next-button,
+#post-calendar .fc-prev-button {
+    background: none;
+    border: 0;
+    box-shadow: none;
+    padding: 0 3px;
+}
+
+#post-calendar .fc-basic-view .fc-body .fc-row {
+    min-height: 0;
+}
+
+#post-calendar .fc-basic-view .fc-day-top .fc-day-number {
+    float: none !important;
+    display: block !important;
+}
+
+
+#post-calendar .fc-row .fc-content-skeleton td {
+    text-align: center;
+}
+
+#post-calendar .fc-day.eventDay{
+    background: #3097d1;
+    color: #fff;
+    cursor: pointer;
+}
+
+#post-calendar .fc-day-top.eventDay{
+    color: #fff;
+    cursor: pointer;
+}
+
+#post-calendar .fc-event {
+    position: relative;
+    display: block;
+    font-size: 9px;
+    line-height: 12px;
+    border-radius: 0;
+    border: none;
+    font-weight: 400;
+    background: transparent;
+    font-family: monospace;
+    letter-spacing: -0.6px;
+    margin: -4px 0 4px 0 !important;
+}
+
+.fc-month-button,
+.fc-listWeek-button{
+    border-radius: 4px;
+    font-size:11px;
+}
+.fc-month-button{
+    display: none;
+}
